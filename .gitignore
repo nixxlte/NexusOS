@@ -1,0 +1,31 @@
+# Ignorar arquivos de log
+*.log
+
+# Ignorar a pasta node_modules inteira
+node_modules/
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos temporários
+*.tmp
+*.swp
+
+# Ignorar pastas de build
+/dist
+/build
+
+/custom-root
+custom-root/
+/custom-disk
+custom-disk/
+
+# Ignorar arquivos de configuração pessoal
+.env
+*.local
+*.img
+
+# Ignorar pastas do VS Code
+.vscode/
+.vs/
