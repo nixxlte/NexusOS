@@ -21,6 +21,9 @@ custom-root/
 /custom-disk
 custom-disk/
 
+Website/
+/Website
+
 # Ignorar arquivos de configuração pessoal
 .env
 *.local
