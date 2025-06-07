@@ -23,6 +23,8 @@ custom-disk/
 
 Website/
 /Website
+htdocs/
+/htdocs
 
 # Ignorar arquivos de configuração pessoal
 .env
