@@ -26,7 +26,7 @@ Recommended:
 
 NexusOS is distributed via pre-built ISOs. You can flash the ISO to a USB drive using tools like **Balena Etcher**, **Rufus**, or **dd**, then boot from it and follow the on-screen instructions.
 
-> [Download ISO](http://helixos.rf.gd/download/)
+> [Download ISO](https://nexusproject.vercel.app/download/)
 
 ## 📃 License
 
