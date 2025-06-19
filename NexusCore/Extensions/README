@@ -1,0 +1,17 @@
+Hi! :3 Bitos here, this is the README for the NexusCore Extensions repository.
+this repo contains various extensions for the Nexus' GNOME Shell works properly.
+
+here's a list of the extensions included in this repository:
+
+- **Dash to Dock**: A GNOME Shell extension that allows you to show the workspace dock on the desktop,
+and customize its appearance and behavior.
+
+- **Blur My Shell**: A GNOME Shell extension that blurs the workspace menu,
+I want to use this cause the GNOME became beauty with this extension.
+
+- **User Themes**: A GNOME Shell extension that allows you to change the GNOME Shell theme
+
+- **Ubuntu AppIndicators**: A GNOME Shell extension that allows you to show app indicators
+in the top bar.
+
+- **Unite**: The GNOME Shell extension that uses the Ubunu Unity interface top bar

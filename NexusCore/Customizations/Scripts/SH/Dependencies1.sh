@@ -6,7 +6,12 @@
 # I made this thing to use into cubic, so it don't appears on installed system, only on chroot
 # (In this case, cubic)
 
-# Code by Byt3z :3
+# A message to the human being who said that this OS is just a skin for Ubuntu: you suck-
+# Just kidding, but it is'nt just a skin, at the point that I COMPILE the kernel and boot it on a real PC
+# This "skin" became a full OS, that I compiled, and I made the utilities like PathX
+# I really put effort into making NexusOS and I hope you enjoy it, or destroy, you decide
+
+# Code by Byt3z :3 (rage and coffee helped too)
 
 echo resolving dependencies for PathX, Python, Electron and NexusCore
 
@@ -21,6 +26,8 @@ sudo apt install nala
 sudo apt install --fix-missing
 echo "alias apt='nala'" >> ~/.bashrc && source ~/.bashrc
 sudo apt install neofetch
+sudo apt remove snapd --purge -y
+sudo apt remove Ubuntu-desktop --purge -y
 sudo apt auto-remove
 
 # Set System packages (this is helpfull only in the chroot, but no in the system
@@ -34,7 +41,7 @@ mkdir /usr/share/Electron
 cd /usr/share/Electron
 git clone https://github.com/electron/electron
 npm start
-cd /.NexusCore/NexusOS/
+cd /.NexusCore/nexusos/
 npm start
 
 # Install File Manager
@@ -52,3 +59,7 @@ nala --version
 git --version
 
 # This thing works on chroot and on the system, probably...
+
+# I reached the end of this script, so I can say that I did it
+# My sanity scream for help now, but I don't care
+# I don't want to sleep now
