@@ -13,7 +13,7 @@
 
 # Code by Byt3z :3 (rage and coffee helped too)
 
-echo resolving dependencies for PathX, Python, Electron and NexusCore
+echo resolving dependencies to PathX, Python, Electron and NexusCore
 
 # Install PathX dependencies
 sudo apt update && sudo apt upgrade -y
