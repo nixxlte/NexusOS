@@ -20,17 +20,18 @@ Minimum:
 Recommended:
 - Dual-core CPU (2.3GHz or righer)
 - 5 or 6GB of RAM
-- 30GB of free disk space
+- 35GB of free disk space
 
 ## 📦 Installation
 
 NexusOS is distributed via pre-built ISOs. You can flash the ISO to a USB drive using tools like **Balena Etcher**, **Rufus**, or **dd**, then boot from it and follow the on-screen instructions.
 
-> [Download ISO](http://helixos.rf.gd/download/)
+> [Download ISO](http://nexusproject.vercel.app/download/)
 
 ## 📃 License
 
 _This project is still in development. License will be defined later._
+The Gnu/Linux General Public License (GPL) applies here, so you can use the project as you wish, completly free
 
 ## 👥 Credits
 
@@ -38,7 +39,6 @@ Made by:
 
 [Gabii :3](https://github.com/Guii1161)
 [BitosXD](https://github.com/oByteszOficial)
-[Lucmsilva](https://github.com/lucmsilva651)
 [Giv-FNZ](https://github.com/GiovaniFZ)
 [Nassinger](https://github.com/im-nassinger)
 [TryPr0x](https://github.com/trypr0x)
