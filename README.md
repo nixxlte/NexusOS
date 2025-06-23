@@ -31,7 +31,7 @@ NexusOS is distributed via pre-built ISOs. You can flash the ISO to a USB drive 
 ## 📃 License
 
 _This project is still in development. License will be defined later._
-The Gnu/Linux General Public License (GPL) applies here, so you can use the project as you wish, completly free
+- The Gnu/Linux General Public License (GPL) applies here, so you can use the project as you wish, completly free
 
 ## 👥 Credits
 
