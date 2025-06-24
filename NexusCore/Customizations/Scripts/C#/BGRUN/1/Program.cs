@@ -18,7 +18,8 @@ public class Class1
         Console.WriteLine("Subprocess started");
         Console.Clear();
 
-        Console.WriteLine("Running processes");
+        Console.WriteLine("Running processes: ");
+        // Here is a list of processes that are running in background
 
     }
 

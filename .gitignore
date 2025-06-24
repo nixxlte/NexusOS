@@ -1,18 +1,25 @@
-# Ignorar arquivos de log
+# ChatGPT suggested this file, so it has somethings that I dont really use, like .DS_Store...
+# I ever had a Mac to use it
+
+# Ignore log files
 *.log
 
-# Ignorar a pasta node_modules inteira
+# Ignore... this thing
 node_modules/
 
-# Ignorar arquivos de sistema
+# Ignore system files
 .DS_Store
 Thumbs.db
 
-# Ignorar arquivos temporários
+# Ignore ISO files
+
+*.iso
+
+# Ignore temp files
 *.tmp
 *.swp
 
-# Ignorar pastas de build
+# Ignore build folders
 /dist
 /build
 
@@ -26,11 +33,11 @@ Website/
 htdocs/
 /htdocs
 
-# Ignorar arquivos de configuração pessoal
+# Ignore personal configuration files
 .env
 *.local
 *.img
 
-# Ignorar pastas do VS Code
+# Ignore IDE and editor specific files
 .vscode/
 .vs/
