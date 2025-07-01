@@ -23,6 +23,7 @@ sudo apt install python3 python3-pip python3-venv python3-dev build-essential li
 sudo apt update
 sudo apt install gnome-session gnome-shell gnome-tweaks python3 python3-tkinter python3-qt
 sudo apt install nala
+sudo apt install python3-gi gir1.2-gtk-3.0
 sudo apt install --fix-missing
 echo "alias apt='nala'" >> ~/.bashrc && source ~/.bashrc
 sudo apt install neofetch
