@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,8 +43,11 @@ namespace KernelM
             KernelStart(); // Call the KernelStart function, this is the main function of the kernel mod
             Console.WriteLine("Call function Start() from Display() on file /mnt/KernelMod/Modules.cs\n");
             Modules.Display(2); // Call the Display function from the Modules class, this is just a test to see if the modules work
+            process = process + "Display\n"; // Add the Display process to the current process, cause... its running, no?
             Console.WriteLine("Call function KernelUpdate() from file /mnt/KernelMod/Program.cs at 60tps\n");
             Console.Clear(); // Clears the console again, cause we don't need to see the startup message anymore
+            //Modules.Render(2); // Call the Render function from the Modules class
+            process = process + "Render\n"; // Add the Render process to the current process, cause... its running, no? i don't will justificate this every time
             while (true) // Runs the KernelUpdate function at 60 ticks per second
             {
 
@@ -69,8 +73,7 @@ namespace KernelM
             // the kernel mod is running properly
 
             // This will verify the command you will enter, and show a "> " prompt
-            Modules.Display(1); // Print "> "
-            cmd = Console.ReadLine(); // Read the command from the console
+            Modules.Display(4); // Print "> " and read the command from the console
             if (cmd == null)
             {
 
@@ -86,6 +89,20 @@ namespace KernelM
 
                 Console.Write("help - Show this help message\n");
                 Console.Write("kprocess - Show the current kernel process\n");
+
+            }
+            else if (cmd == "kprocess")
+            {
+
+                Console.Write("Booting KernelProcess...\n");
+                Console.Clear(); // Clears the console, cause we don't need to see the command prompt anymore
+                KernelProcess(); // Call the KernelProcess function, this will show the current kernel processes
+
+            }
+            else if (cmd == "clr")
+            {
+            
+                Console.Clear(); // Clears the console, this is just a command to clear the console...
 
             }
 
