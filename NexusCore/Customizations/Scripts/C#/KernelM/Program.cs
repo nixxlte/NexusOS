@@ -40,6 +40,8 @@ namespace KernelM
             Console.WriteLine("Booting up KernelMod...\n");
             Console.WriteLine("Call function KernelStart() from file /mnt/KernelMod/Program.cs\n");
             KernelStart(); // Call the KernelStart function, this is the main function of the kernel mod
+            Console.WriteLine("Call function Start() from Display() on file /mnt/KernelMod/Modules.cs\n");
+            Modules.Display(2); // Call the Display function from the Modules class, this is just a test to see if the modules work
             Console.WriteLine("Call function KernelUpdate() from file /mnt/KernelMod/Program.cs at 60tps\n");
             Console.Clear(); // Clears the console again, cause we don't need to see the startup message anymore
             while (true) // Runs the KernelUpdate function at 60 ticks per second
@@ -67,7 +69,7 @@ namespace KernelM
             // the kernel mod is running properly
 
             // This will verify the command you will enter, and show a "> " prompt
-            Console.Write("> "); // Print prompt without newline
+            Modules.Display(1); // Print "> "
             cmd = Console.ReadLine(); // Read the command from the console
             if (cmd == "")
             {
