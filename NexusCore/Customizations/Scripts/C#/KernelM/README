@@ -1,0 +1,75 @@
+Hi there! :3 Bitos here and this is the README for the KernelMod (NexusCore) scripts.
+
+first of all, I want to thank you for downloading this script and I hope you enjoy it! :3
+secondly, I want to give you a quick overview of what this script does and how it works.
+
+# Modules.cs
+
+this script does some simple things with drivers (on NexusOS called Modules)
+- it allows you to load and unload modules
+- it allows you to list all loaded modules
+- it allows you to get information about a specific module
+- it allows you to get functions from a specific module, like the 'Display(2)' that prints a "> " on the screen
+
+// How do I implement other modules?
+
+that's a great question! :3
+you need to create a void with this signature:
+
+	public static void ModuleName(int call)
+	{
+
+		if (call == 1)
+		{
+	
+			*run commands*
+
+		}
+		else if (call == 2)
+		{
+	
+			*commands to load the module*
+
+		}
+		else if (call == 3)
+		{
+	
+			*commands to stop the module*
+	
+		}
+
+	}
+
+this will allow KernelMod to call your module and execute the commands you want it to run.
+I think that this will be useful just for OEMs, but its here in case you want to use it too! :3
+these codes don't are just for hardware, you can use it for software commands too.
+fell free to use it as you want! :3
+
+# Program.cs
+
+this script is a kernel, especifically KernelMod
+I don't recommend you to modify this script if you don't have experience,
+but if you have any experience, you can modify it as you want! :3
+
+// How does this script works?
+
+this script runs simple commands, and it has a simple terminal, if you want to run a command
+gnome terminal still works on NexusOS, so you can use it to run commands on linux kernel
+
+every command is separated by a public static void, so you can add your own commands
+(if you want)
+
+this code has something about 200 lines, so I will not explain every line,
+and its not finished yet, so it has to be something about 1000 lines when finished
+
+that is all for now, I hope you enjoy this script and if you have any questions,
+feel free to ask me on my discord, threads or instagram! :3
+I am @BitosXD on all of them!
+
+# NexusOS Community
+
+if you want to join the NexusOS community, you can do it on our discord server:
+https://discord.gg/zNs7fdD9Zf
+
+if you want to contribute to NexusOS, you can do it on our github:
+https://github.com/obyteszoficial/NexusOS

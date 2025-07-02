@@ -71,7 +71,7 @@ namespace KernelM
             // This will verify the command you will enter, and show a "> " prompt
             Modules.Display(1); // Print "> "
             cmd = Console.ReadLine(); // Read the command from the console
-            if (cmd == "")
+            if (cmd == null)
             {
 
                 Console.Write("\n");
