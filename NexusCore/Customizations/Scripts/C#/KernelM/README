@@ -42,16 +42,16 @@ you need to create a void with this signature:
 
 this will allow KernelMod to call your module and execute the commands you want it to run.
 I think that this will be useful just for OEMs, but its here in case you want to use it too! :3
-these codes don't are just for hardware, you can use it for software commands too.
-fell free to use it as you want! :3
+these codes aren't just for hardware, you can use it for software commands too.
+feel free to use it as you want! :3
 
 # Program.cs
 
-this script is a kernel, especifically KernelMod
+this script is a kernel, specifically KernelMod
 I don't recommend you to modify this script if you don't have experience,
 but if you have any experience, you can modify it as you want! :3
 
-// How does this script works?
+// How does this script work?
 
 this script runs simple commands, and it has a simple terminal, if you want to run a command
 gnome terminal still works on NexusOS, so you can use it to run commands on linux kernel
