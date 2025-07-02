@@ -1,0 +1,15 @@
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\bin\Debug\net8.0\KernelM.exe
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\bin\Debug\net8.0\KernelM.deps.json
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\bin\Debug\net8.0\KernelM.runtimeconfig.json
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\bin\Debug\net8.0\KernelM.dll
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\bin\Debug\net8.0\KernelM.pdb
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\obj\Debug\net8.0\KernelM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\obj\Debug\net8.0\KernelM.AssemblyInfoInputs.cache
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\obj\Debug\net8.0\KernelM.AssemblyInfo.cs
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\obj\Debug\net8.0\KernelM.csproj.CoreCompileInputs.cache
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\obj\Debug\net8.0\KernelM.sourcelink.json
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\obj\Debug\net8.0\KernelM.dll
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\obj\Debug\net8.0\refint\KernelM.dll
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\obj\Debug\net8.0\KernelM.pdb
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\obj\Debug\net8.0\KernelM.genruntimeconfig.cache
+C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\obj\Debug\net8.0\ref\KernelM.dll
