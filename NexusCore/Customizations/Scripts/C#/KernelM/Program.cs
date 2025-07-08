@@ -89,6 +89,7 @@ namespace KernelM
 
                 Console.Write("help - Show this help message\n");
                 Console.Write("kprocess - Show the current kernel process\n");
+                Console.Write("clr - Clears the console");
 
             }
             else if (cmd == "kprocess")
@@ -101,7 +102,7 @@ namespace KernelM
             }
             else if (cmd == "clr")
             {
-            
+
                 Console.Clear(); // Clears the console, this is just a command to clear the console...
 
             }
