@@ -26,3 +26,28 @@ void Display(int arga, const std::string& argb)
 	}
 
 }
+
+void logging(const std::string& arg)
+{
+
+	printf("LOG: ", arg "\n");
+
+}
+
+void Linux(int arg)
+{
+
+	if (arg == 1)
+	{
+
+		logging("this module hasn't a code function"); // I hope you already know :p
+
+	}
+	else if (arg == 2)
+	{
+
+		printf("Linux Kernel has already loaded.");
+
+	}
+
+}

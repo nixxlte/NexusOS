@@ -2,3 +2,7 @@
 // but this is the CPP one, thats completlly compatible with the linux kernel btw
 
 void Display(int arga, const std::string& argb);
+
+void Linux(int arg);
+
+void logging(const std::string& arg);
