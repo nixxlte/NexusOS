@@ -51,3 +51,33 @@ void Linux(int arg)
 	}
 
 }
+
+void cmds(int arg)
+{
+
+	if (arg == 1)
+	{
+
+		printf("> ");
+
+	}
+	else if (arg == 2)
+	{
+
+		printf("CMDS module from file '/usr/share/KernelM/KernelMod/Modules.h' loaded sucessfully\n");
+
+	}
+	else if (arg == 3)
+	{
+
+		printf("CMDS module from file '/usr/share/KernelM/KernelMod/Modules.h' closed sucessfully\n");
+
+	}
+	else
+	{
+
+		logging("invalid command selected");
+
+	}
+
+}
