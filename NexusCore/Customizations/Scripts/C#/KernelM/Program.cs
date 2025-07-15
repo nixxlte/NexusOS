@@ -148,7 +148,8 @@ namespace KernelM
                 ocmd = cmd;
                 Console.Write("If you exit the kernel mod, the kernel will stop and the system will shut down.\n");
                 Console.Write("so the command is 'shutdown -s', like in the windows\n");
-                External.reset("Commands");
+                External.reset("Commands"); // This thing mades shell enter in a trance, and send infinite commands
+                // And im too lazy to fix it
 
             }
             else if (cmd == "shutdown -s")
