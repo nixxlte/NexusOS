@@ -24,6 +24,7 @@ namespace KernelM
 
         public static string cmd = ""; // This is just a variable to store the command, I will use it later
         public static string process = ""; // This is just a variable to store the current process, I will use it later
+        public static string ocmd = ""; // This is just a variable to store the old command, I will use it later
 
         public static void Main(string[] args) // I cant count how many times I wrote "cublic" by error
         {
@@ -36,6 +37,7 @@ namespace KernelM
         public static void Startup()
         {
 
+            cmd = "null"; // Initialize the command variable to null, so it can be read later
             Console.Clear(); // Theres what I said, clears the console
             Console.WriteLine("Hello, World\n");
             Console.WriteLine("Booting up KernelMod...\n");
@@ -74,38 +76,7 @@ namespace KernelM
 
             // This will verify the command you will enter, and show a "> " prompt
             Modules.Display(4); // Print "> " and read the command from the console
-            if (cmd == null)
-            {
-
-                Console.Write("\n");
-                Console.Write("You entered an empty command, please enter a valid command.\n");
-
-            }
-            else if (cmd == "help")
-            {
-
-                Console.Write("\n");
-                Console.Write("Avaiable commands:\n");
-
-                Console.Write("help - Show this help message\n");
-                Console.Write("kprocess - Show the current kernel process\n");
-                Console.Write("clr - Clears the console");
-
-            }
-            else if (cmd == "kprocess")
-            {
-
-                Console.Write("Booting KernelProcess...\n");
-                Console.Clear(); // Clears the console, cause we don't need to see the command prompt anymore
-                KernelProcess(); // Call the KernelProcess function, this will show the current kernel processes
-
-            }
-            else if (cmd == "clr")
-            {
-
-                Console.Clear(); // Clears the console, this is just a command to clear the console...
-
-            }
+            ConsoleCommands(); // Call the verification of the entered command
 
         }
 
@@ -116,6 +87,90 @@ namespace KernelM
             Console.Write("\n");
             Console.Write("Current running process on kernel: \n");
             Console.WriteLine(process + "\n"); // Yes... just 2 lines of code, its not too much, but it works :D
+
+        }
+
+        public static void ConsoleCommands()
+        {
+
+            if (cmd == null)
+            {
+
+                ocmd = cmd; // Save the old command to the ocmd variable
+                Console.Write("\n");
+                Console.Write("You entered an empty command, please enter a valid command.\n");
+                External.reset("commands"); // Reset the command to null, so it can be read again
+
+            }
+            else if (cmd == "help")
+            {
+
+                ocmd = cmd;
+
+                Console.Write("\n");
+                Console.Write("Avaiable commands:\n");
+
+                Console.Write("help - Show this help message\n");
+                Console.Write("kprocess - Show the current kernel process\n");
+                Console.Write("clr - Clears the console");
+                External.reset("commands");
+
+            }
+            else if (cmd == "kprocess")
+            {
+
+                ocmd = cmd;
+                Console.Write("Booting KernelProcess...\n");
+                Console.Clear(); // Clears the console, cause we don't need to see the command prompt anymore
+                KernelProcess(); // Call the KernelProcess function, this will show the current kernel processes
+                External.reset("commands");
+
+            }
+            else if (cmd == "clr")
+            {
+
+                ocmd = cmd;
+                Console.Clear(); // Clears the console, this is just a command to clear the console...
+                External.reset("commands"); // Reset the command to null, so it can be read again
+
+            }
+            else if (cmd == "Console.Var.Read(cmd)")
+            {
+
+                Console.Write(ocmd + " \n"); // Yes... this is the code to read the variable
+                ocmd = cmd;
+                External.reset("commands");
+
+            }
+            else if (cmd == "exit")
+            {
+
+                ocmd = cmd;
+                Console.Write("If you exit the kernel mod, the kernel will stop and the system will shut down.\n");
+                Console.Write("so the command is 'shutdown -s', like in the windows\n");
+                External.reset("Commands");
+
+            }
+            else if (cmd == "shutdown -s")
+            {
+
+                ocmd = cmd;
+                Console.Write("Shutting down the system...\n");
+                System.Threading.Thread.Sleep(1000); // Wait for 1 second (1000 milliseconds)
+                Console.Clear(); // Clears the console, cause we don't need to see the command prompt anymore
+                Environment.Exit(0); // Exits the program, this will stop the kernel mod and shut down the system
+
+            }
+            else
+            {
+
+                ocmd = cmd;
+                Console.Write("\n");
+                Console.Write("Unknown command: " + cmd + "\n");
+                Console.Write("Type 'help' to see the available commands.\n");
+                External.reset("commands"); // Reset the command to null, so it can be read again
+
+            }
 
         }
 
