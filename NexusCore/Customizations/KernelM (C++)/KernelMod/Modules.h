@@ -11,3 +11,5 @@ void Linux(int arg);
 void logging(const std::string& arg);
 
 void cmds(int arg);
+
+int log(const std::string& arg);

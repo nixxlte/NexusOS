@@ -3,6 +3,8 @@
 
 // I think CPP is harder than C# but I need to use it to make my Kernel integrated with linux's kernel
 
+const std::string logPrefix = "auto log: ";
+
 void Display(int arga, const std::string& argb)
 {
 
@@ -79,5 +81,38 @@ void cmds(int arg)
 		logging("invalid command selected");
 
 	}
+
+}
+
+int log(const std::string& arg)
+{
+
+
+	if (arg.empty())
+	{
+
+		std::cout << logPrefix << "no argument provided\n";
+
+	}
+	else if (arg == "exit")
+	{
+
+		std::cout << logPrefix << "fatal error, system exiting\n";
+
+	}
+	else if (arg == "compilation")
+	{
+
+		std::cout << logPrefix << "compilation error, maybe Byt3z's error of the build, sorry\n";
+
+	}
+	else if (arg == "debug")
+	{
+
+		std::cout << logPrefix << "debugging code, reason: code request\n";
+		
+	}
+
+	return 0; // return 0 to indicate success, or any other value to indicate an error
 
 }

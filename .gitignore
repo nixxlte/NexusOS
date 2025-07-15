@@ -33,6 +33,11 @@ Website/
 htdocs/
 /htdocs
 
+# Ignore the kernel folder, cause its too big
+
+NexusKernel/
+/NexusKernel
+
 # Ignore personal configuration files
 .env
 *.local
