@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 // This is not a "kernel", is just a kernel-like structure for organizing code.
 // I call this a "kernel mod", like the name "KernelM" suggests.
 // I probably will spend some time in this code... cause is a... kernel, kernels are fun, right?
-// Linus Torvalds don't make the Linux in just a day, he spent years on it.
+// Linus Torvalds don't make the Linux in just a day, he spent a year on it.
 // I probably will spend just... 11 months, cause i'm using the Linux kernel as a base.
 // d'you want a coffee to watch me code this?
 // I'm madding this code while fix an Galaxy J5 :D
+
+// ^^ I already fixed the phone, but here is a registry that i need to fix a Galaxy J5 (of 2015)
 
 namespace KernelM
 {
@@ -87,6 +89,7 @@ namespace KernelM
             Console.Write("\n");
             Console.Write("Current running process on kernel: \n");
             Console.WriteLine(process + "\n"); // Yes... just 2 lines of code, its not too much, but it works :D
+            // And works well, so... its good, no? :3
 
         }
 
@@ -113,6 +116,7 @@ namespace KernelM
                 Console.Write("help - Show this help message\n");
                 Console.Write("kprocess - Show the current kernel process\n");
                 Console.Write("clr - Clears the console");
+                Console.Write("shutdown - Shut the system down, but it needs a argument, like -s");
                 External.reset("commands");
 
             }
@@ -139,7 +143,8 @@ namespace KernelM
 
                 Console.Write(ocmd + " \n"); // Yes... this is the code to read the variable
                 ocmd = cmd;
-                External.reset("commands");
+                External.reset("commands"); // This thing mades shell enter in a trance, and send infinite commands
+                // And im too lazy to fix it
 
             }
             else if (cmd == "exit")
@@ -148,8 +153,7 @@ namespace KernelM
                 ocmd = cmd;
                 Console.Write("If you exit the kernel mod, the kernel will stop and the system will shut down.\n");
                 Console.Write("so the command is 'shutdown -s', like in the windows\n");
-                External.reset("Commands"); // This thing mades shell enter in a trance, and send infinite commands
-                // And im too lazy to fix it
+                External.reset("Commands"); 
 
             }
             else if (cmd == "shutdown -s")
@@ -166,10 +170,13 @@ namespace KernelM
             {
 
                 ocmd = cmd;
-                Console.Write("\n");
+                Console.Write(" \n");
                 Console.Write("Unknown command: " + cmd + "\n");
                 Console.Write("Type 'help' to see the available commands.\n");
                 External.reset("commands"); // Reset the command to null, so it can be read again
+                KernelUpdate(); // I need to place this here, cause... it has a cursed bug that show "unknown command" forever
+                // Its cool that i did this line while play animal crossing, right? :D
+                // (Nintendo please don't sue me, my game is original)
 
             }
 
