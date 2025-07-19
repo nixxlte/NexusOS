@@ -15,7 +15,7 @@ from tkinter import *
 import tkinter as tk
 
 def Garquiteture():
-    arch = platform.architecture()[0]
+    arch = platform.architecture()[0] # I dont even know what is this, but it works :D
     if arch == '64bit':
         print("returned x64")
     elif arch == '32bit':

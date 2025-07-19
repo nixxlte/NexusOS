@@ -22,7 +22,7 @@ you need to create a void with this signature:
 		if (call == 1)
 		{
 	
-			*run commands*
+			*run module's commands*
 
 		}
 		else if (call == 2)
@@ -45,6 +45,9 @@ I think that this will be useful just for OEMs, but its here in case you want to
 these codes aren't just for hardware, you can use it for software commands too.
 feel free to use it as you want! :3
 
+ill probably add a separate script for custom modules, that you can add many modules you want,
+just using the same signature, so you can have a lot of modules in the same script
+
 # Program.cs
 
 this script is a kernel, specifically KernelMod
@@ -62,9 +65,34 @@ every command is separated by a public static void, so you can add your own comm
 this code has something about 200 lines, so I will not explain every line,
 and its not finished yet, so it has to be something about 1000 lines when finished
 
+curiosity: this script has secret commands in the terminal >:3
+it don't shows when you type "help" or "?" but you can type them and they will work :3
+i use these commands to test some memories addresses and some other things, so they are not documented
+its just for me, the cute dev :3
+
+one of these commands is "Console.Var.Set(cmd) --blayve" thats is a easter egg >:3
+
+# Arch.py
+
+this is the UNIQUE python script in the KernelM, the rest are C# scripts
+this script indentifies the architecture of the device, this info is used by the kernel, futurely
+for now, it just prints the architecture of the device, and saves it in the memory, futurely too
+
+// How does this script work?
+
+this script will use the "platform" module, to write the arch of the device in the memory
+for now, it prints the arch of the device, and opens a window, that i called "AARCHmgr"
+this window allows you to see the architecture of the device, and futurely, it will allow you to
+view some info about your device, like the CPU, RAM, etc. like the "Win + Pause" in Windows
+
+i know, for now this script is raw (YET) but im working on it, together with the Linux Kernel
+and the KernelMod, so it will be more useful in the future :3
+(i think)
+
 that is all for now, I hope you enjoy this script and if you have any questions,
 feel free to ask me on my discord, threads or instagram! :3
 I am @BitosXD on all of them!
+or you can ask on the NexusOS discord server, I will be there too! :3
 
 # NexusOS Community
 
@@ -76,3 +104,14 @@ https://github.com/obyteszoficial/NexusOS
 
 Disclaimer: I did a C++ version of this kernel, but I discontinued it because I wanted to do it in C#
 for me its better, cause I am more experienced in C# than in C++
+
+phew, that was a lot of text! but i hope this was useful for you
+Bye! :3
+
+# Credits
+
+- Byt3z (me) for creating the scripts and the NexusOS project
+- ChatGPT for translating some parts from Portuguese to English
+- Lucmsilva for helping me with the git bash
+- CUBIC community for made this project possible with the iso compiler
+- Linus Torvalds for creating Linux, the kernel that NexusOS is based on

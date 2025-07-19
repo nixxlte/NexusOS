@@ -27,6 +27,7 @@ namespace KernelM
         public static string cmd = ""; // This is just a variable to store the command, I will use it later
         public static string process = ""; // This is just a variable to store the current process, I will use it later
         public static string ocmd = ""; // This is just a variable to store the old command, I will use it later
+        public static string blayve = ""; // Yes... almost 40 lines of code just to made a easter egg to a youtuber called Blayve
 
         public static void Main(string[] args) // I cant count how many times I wrote "cublic" by error
         {
@@ -93,6 +94,23 @@ namespace KernelM
 
         }
 
+        public static void Help()
+        {
+
+            // Why i made this void? thats cause i use 2 FUCKIN' commands to activate the help function
+            // And update both are very hard
+
+            Console.Write("\n");
+            Console.Write("Avaiable commands:\n");
+
+            Console.Write("help - Show this help message\n");
+            Console.Write("kprocess - Show the current kernel process\n");
+            Console.Write("clr - Clears the console");
+            Console.Write("shutdown - Shut the system down, but it needs a argument, like -s");
+            External.reset("commands");
+
+        }
+
         public static void ConsoleCommands()
         {
 
@@ -110,14 +128,15 @@ namespace KernelM
 
                 ocmd = cmd;
 
-                Console.Write("\n");
-                Console.Write("Avaiable commands:\n");
+                Help(); // Call the Help function, this will show the available commands
 
-                Console.Write("help - Show this help message\n");
-                Console.Write("kprocess - Show the current kernel process\n");
-                Console.Write("clr - Clears the console");
-                Console.Write("shutdown - Shut the system down, but it needs a argument, like -s");
-                External.reset("commands");
+            }
+            else if (cmd == "?")
+            {
+
+                ocmd = cmd; // Save the old command to the ocmd variable
+
+                Help();
 
             }
             else if (cmd == "kprocess")
@@ -153,7 +172,7 @@ namespace KernelM
                 ocmd = cmd;
                 Console.Write("If you exit the kernel mod, the kernel will stop and the system will shut down.\n");
                 Console.Write("so the command is 'shutdown -s', like in the windows\n");
-                External.reset("Commands"); 
+                External.reset("Commands");
 
             }
             else if (cmd == "shutdown -s")
@@ -164,6 +183,18 @@ namespace KernelM
                 System.Threading.Thread.Sleep(1000); // Wait for 1 second (1000 milliseconds)
                 Console.Clear(); // Clears the console, cause we don't need to see the command prompt anymore
                 Environment.Exit(0); // Exits the program, this will stop the kernel mod and shut down the system
+
+            }
+            else if (cmd == "Console.Var.Set(cmd) --blayve")
+            {
+
+                GetRandomBlayve(); // Call the GetRandomBlayve function, this will return a random blayve string
+                ocmd = cmd;
+                blayve = GetRandomBlayve(); // Set the blayve variable to the random blayve string
+                cmd = blayve; // Set the cmd variable to the random blayve string
+                Console.Write("You set the variable cmd to a random blayve: " + blayve + "\n");
+                Console.Clear();
+                Console.Write(blayve + "\n"); // Yes... its just an easter egg lol
 
             }
             else
@@ -180,6 +211,14 @@ namespace KernelM
 
             }
 
+        }
+
+        public static string GetRandomBlayve()
+        {
+            string[] options = { "I ate my dad", "I eat butterflies" };
+            Random rnd = new Random();
+            int index = rnd.Next(options.Length);
+            return options[index];
         }
 
     }
