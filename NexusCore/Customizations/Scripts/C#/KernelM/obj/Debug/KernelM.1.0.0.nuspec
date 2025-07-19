@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>KernelM</id>
+    <version>1.0.0</version>
+    <authors>KernelM</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="fb270152df999f11c0c25184fc5bb4acd01ce2a6" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\bin\Debug\net8.0\KernelM.runtimeconfig.json" target="lib\net8.0\KernelM.runtimeconfig.json" />
+    <file src="C:\Users\Byt3z\Desktop\NexusOS\NexusCore\Customizations\Scripts\C#\KernelM\bin\Debug\net8.0\KernelM.dll" target="lib\net8.0\KernelM.dll" />
+  </files>
+</package>

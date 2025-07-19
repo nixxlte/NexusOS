@@ -50,7 +50,7 @@ just using the same signature, so you can have a lot of modules in the same scri
 
 # Program.cs
 
-this script is a kernel, specifically KernelMod
+this script isnt a kernel anymore, its just a simple terminal that runs commands
 I don't recommend you to modify this script if you don't have experience,
 but if you have any experience, you can modify it as you want! :3
 
@@ -88,6 +88,18 @@ view some info about your device, like the CPU, RAM, etc. like the "Win + Pause"
 i know, for now this script is raw (YET) but im working on it, together with the Linux Kernel
 and the KernelMod, so it will be more useful in the future :3
 (i think)
+
+# KernelM.cs
+
+this is REALLY the kernel, and not just a terminal, like the Program.cs
+this script is the main script of the KernelMod, it runs the modules, and it has some
+(but Program.CS still start some render modules, like the Display module)
+this script is empty for now, caus its created... now lol
+
+// How does this script work?
+
+it dont work yet :D
+this script supposed to be the KernelM, but this think dont does anything yet, so its empty
 
 that is all for now, I hope you enjoy this script and if you have any questions,
 feel free to ask me on my discord, threads or instagram! :3

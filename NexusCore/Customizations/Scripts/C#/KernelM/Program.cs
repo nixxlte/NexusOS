@@ -45,25 +45,27 @@ namespace KernelM
             Console.WriteLine("Hello, World\n");
             Console.WriteLine("Booting up KernelMod...\n");
             Console.WriteLine("Call function KernelStart() from file /mnt/KernelMod/Program.cs\n");
-            KernelStart(); // Call the KernelStart function, this is the main function of the kernel mod
+            Start(); // Call the KernelStart function, this is the main function of the kernel mod
             Console.WriteLine("Call function Start() from Display() on file /mnt/KernelMod/Modules.cs\n");
             Modules.Display(2); // Call the Display function from the Modules class, this is just a test to see if the modules work
             process = process + "Display\n"; // Add the Display process to the current process, cause... its running, no?
             Console.WriteLine("Call function KernelUpdate() from file /mnt/KernelMod/Program.cs at 60tps\n");
             Console.Clear(); // Clears the console again, cause we don't need to see the startup message anymore
             //Modules.Render(2); // Call the Render function from the Modules class
-            process = process + "Render\n"; // Add the Render process to the current process, cause... its running, no? i don't will justificate this every time
+            process = process + "Render\n"; // Add the Render process to the current process, cause... its running, no? i won't justificate this every time
+            KernelM.Boot(); // Really boot the KernelM, one of last things to do in the startup
+            Console.WriteLine("Call function KernelM.Boot() from file /mnt/KernelMod/KernelM.cs\n");
             while (true) // Runs the KernelUpdate function at 60 ticks per second
             {
 
-                KernelUpdate();
+                Update();
                 System.Threading.Thread.Sleep(16); // Sleep for 16 milliseconds, this is 60 ticks per second
 
             }
 
         }
 
-        public static void KernelStart()
+        public static void Start()
         {
 
             Console.WriteLine("KernelMod started successfully!\n");
@@ -71,7 +73,7 @@ namespace KernelM
 
         }
 
-        public static void KernelUpdate()
+        public static void Update()
         {
 
             // Console.WriteLine("KernelMod is running..."); // This is just a SUCESSFULLY test,
@@ -205,7 +207,7 @@ namespace KernelM
                 Console.Write("Unknown command: " + cmd + "\n");
                 Console.Write("Type 'help' to see the available commands.\n");
                 External.reset("commands"); // Reset the command to null, so it can be read again
-                KernelUpdate(); // I need to place this here, cause... it has a cursed bug that show "unknown command" forever
+                Update(); // I need to place this here, cause... it has a cursed bug that show "unknown command" forever
                 // Its cool that i did this line while play animal crossing, right? :D
                 // (Nintendo please don't sue me, my game is original)
 
