@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -17,7 +18,31 @@ namespace KernelM
             {
 
                 Program.cmd = "null";
-                Program.ConsoleCommands();
+                Program.Update();
+
+            }
+
+        }
+
+        public static void logging(string arg)
+        {
+
+            if (arg != "REBOOTING")
+            {
+
+                Console.Write("LOG: " + arg + "\n");
+
+            }
+            else if (arg == "REBOOTING")
+            {
+
+                Console.Write("REBOOTING by a system error");
+
+            }
+            else if (arg == "")
+            {
+
+                Console.Write("LOG: unknown");
 
             }
 

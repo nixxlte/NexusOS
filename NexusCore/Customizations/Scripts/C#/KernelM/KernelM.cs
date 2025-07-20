@@ -26,17 +26,38 @@ namespace KernelM
 
         }
 
+        public static void LoadModules()
+        {
+
+            Modules.ASCII(2);
+            Modules.Render(2);
+
+        }
+
         public static void Kstart()
         {
-            
 
+            // im madding this part of the code using my phone as a monitor, is a bit weird but works
+            // and don't has a big delay, so is fine :3
+            Console.WriteLine("KernelM started successfully!");
+            Console.Write("Started Kstart main function\n");
+
+        }
+
+        public static void TerminaRun() // It's just a cute name for "show this thing after the Terminal start"
+        {
+
+            Console.Write("Hello, World\n");
+            Console.Write("Code written by Byt3z under a month\n");
+            Console.Write("Licence: GNU GPLv3\n");
+            Console.WriteLine(" ");
 
         }
 
         public static void Kupdate()
         {
 
-
+            
 
         }
 

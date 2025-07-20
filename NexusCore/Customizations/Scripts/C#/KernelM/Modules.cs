@@ -15,19 +15,28 @@ namespace KernelM
             if (mod == "Display") 
             {
             
-                Console.Write("Loading Display module... ");
+                Console.Write("Loading Display module... \n");
 
             }
             else if (mod == "Render")
             {
 
-                Console.Write("Loading Render module... ");
+                Console.Write("Loading Render module... \n");
+
+            }
+            else if (mod == "ASCII")
+            {
+
+                Console.Write("Loading ASCII module... \n");
+                Console.BackgroundColor = ConsoleColor.White;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.Clear();
 
             }
             else
             {
 
-                Console.Write("Loading UNKNOWN module... ");
+                Console.Write("Loading UNKNOWN module... \n");
 
             }
 
@@ -89,13 +98,39 @@ namespace KernelM
 
         }
 
+        public static void ASCII(int call)
+        {
+
+            if (call == 1)
+            {
+
+                External.logging("ASCII module called, but it don't has any call function");
+
+            }
+            else if (call == 2)
+            {
+
+                init("ASCII");
+
+            }
+            else if (call == 3)
+            {
+                close("ASCII");
+            }
+            else
+            {
+                Console.WriteLine("Unknown ASCII call!");
+            }
+
+        }
+
         public static void Render(int call)
         { 
         
             if (call == 1)
             {
 
-                Program.KernelUpdate();
+                Program.Update();
 
             }
             else if (call == 2)

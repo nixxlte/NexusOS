@@ -54,10 +54,15 @@ namespace KernelM
             //Modules.Render(2); // Call the Render function from the Modules class
             process = process + "Render\n"; // Add the Render process to the current process, cause... its running, no? i won't justificate this every time
             KernelM.Boot(); // Really boot the KernelM, one of last things to do in the startup
+            KernelM.LoadModules(); // Load other modules, that won't be used just in the Terminal Emulator
             Console.WriteLine("Call function KernelM.Boot() from file /mnt/KernelMod/KernelM.cs\n");
+            Console.Clear();
+            KernelM.TerminaRun(); // Call the "write a watermark in the terminal"
             while (true) // Runs the KernelUpdate function at 60 ticks per second
             {
 
+                KernelM.Kupdate(); // Call the KernelUpdate function, if I call the update function directly in the KernelM.cs
+                // The system wont start the Program.cs Update() void
                 Update();
                 System.Threading.Thread.Sleep(16); // Sleep for 16 milliseconds, this is 60 ticks per second
 
@@ -107,8 +112,9 @@ namespace KernelM
 
             Console.Write("help - Show this help message\n");
             Console.Write("kprocess - Show the current kernel process\n");
-            Console.Write("clr - Clears the console");
-            Console.Write("shutdown - Shut the system down, but it needs a argument, like -s");
+            Console.Write("clr - Clears the console\n");
+            Console.Write("shutdown - Shut the system down, but it needs a argument, like -s\n");
+            Console.WriteLine();
             External.reset("commands");
 
         }
@@ -203,7 +209,7 @@ namespace KernelM
             {
 
                 ocmd = cmd;
-                Console.Write(" \n");
+                Console.WriteLine(" ");
                 Console.Write("Unknown command: " + cmd + "\n");
                 Console.Write("Type 'help' to see the available commands.\n");
                 External.reset("commands"); // Reset the command to null, so it can be read again
