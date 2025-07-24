@@ -47,6 +47,8 @@ namespace KernelM
         public static void TerminaRun() // It's just a cute name for "show this thing after the Terminal start"
         {
 
+            // If someone don't cath the reference in the name, is a reference to the "Termina Field" from The Legend of Zelda: Majora's Mask
+
             Console.Write("Hello, World\n");
             Console.Write("Code written by Byt3z under a month\n");
             Console.Write("Licence: GNU GPLv3\n");

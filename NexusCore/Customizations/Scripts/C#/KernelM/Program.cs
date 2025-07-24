@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 // Linus Torvalds don't make the Linux in just a day, he spent a year on it.
 // I probably will spend just... 11 months, cause i'm using the Linux kernel as a base.
 // d'you want a coffee to watch me code this?
-// I'm madding this code while fix an Galaxy J5 :D
+// I'm making this code while fix an Galaxy J5 :D
 
 // ^^ I already fixed the phone, but here is a registry that i need to fix a Galaxy J5 (of 2015)
 
