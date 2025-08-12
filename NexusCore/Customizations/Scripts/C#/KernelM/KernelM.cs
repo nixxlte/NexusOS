@@ -30,14 +30,14 @@ namespace KernelM
         {
 
             Modules.ASCII(2);
-            Modules.Render(2);
+            Modules.Render(2); // Both are required for terminal
 
         }
 
         public static void Kstart()
         {
 
-            // im madding this part of the code using my phone as a monitor, is a bit weird but works
+            // im making this part of the code using my phone as a monitor, is a bit weird but works
             // and don't has a big delay, so is fine :3
             Console.WriteLine("KernelM started successfully!");
             Console.Write("Started Kstart main function\n");

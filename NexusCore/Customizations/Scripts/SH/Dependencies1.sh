@@ -37,7 +37,7 @@ sudo su
 cd /
 mkdir .NexusCore
 cd .NexusCore
-git clone https://github.com/oByteszOficial/NexusOS.git
+git clone https://github.com/bitosxd/NexusOS.git
 mkdir /usr/share/Electron
 cd /usr/share/Electron
 git clone https://github.com/electron/electron
