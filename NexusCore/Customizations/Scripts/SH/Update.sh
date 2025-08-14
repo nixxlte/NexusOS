@@ -1,4 +1,4 @@
-#!bin/bash/
+#!/bin/bash/
 
 # this is almost "dependencies2.sh" but it dont just install some dependencies, this script turns ubuntu into NexusOS
 # this script is supposed to be used into cubic
