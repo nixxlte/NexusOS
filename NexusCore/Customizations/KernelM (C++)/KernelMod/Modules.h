@@ -8,6 +8,8 @@ void Display(int arga, const std::string& argb);
 
 void Linux(int arg);
 
+void ASCII(int arg);
+
 void logging(const std::string& arg);
 
 void cmds(int arg);

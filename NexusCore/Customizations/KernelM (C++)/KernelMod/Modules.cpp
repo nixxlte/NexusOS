@@ -54,6 +54,29 @@ void Linux(int arg)
 
 }
 
+void ASCII(int arg) {
+
+	if (arg == 1) 
+	{
+	
+		printf("sorry, but ASCII module doesn't have any function\n");
+
+	}
+	else if (arg == 2) 
+	{
+
+		printf("ASCII module from file '/usr/share/KernelM/KernelMod/Modules.h' loaded sucessfully\n");
+
+	}
+	else 
+	{
+
+		print("unknown argument for ASCII module\n");
+
+	}
+
+}
+
 void cmds(int arg)
 {
 
