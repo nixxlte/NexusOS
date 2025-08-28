@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #eaf1ff;
+  background-color: #fff4f4;
   margin: 0;
   padding: 0;
 }
@@ -20,7 +20,7 @@ header {
 }
 
 main {
-  background-color: #ffffff;
+  background-color: #fffcfc;
 }
 
 header {
@@ -36,19 +36,37 @@ header {
 
 .header-buttons a {
   padding: .2em .5em;
-  background-color: #d6e3ff;
+  background-color: #ffe4e3;
   border-radius: .3em;
   text-decoration: none;
   color: #000000;
 }
 
 .header-buttons a:hover {
-  background-color: #c6d8ff;
+  background-color: #ffc6c6;
+  font-weight: bold;
+}
+
+.download {
+  display: flex;
+  gap: .5em;
+}
+
+.download a {
+  padding: .2em .5em;
+  background-color: #ffe9e8;
+  border-radius: .3em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.download a:hover {
+  background-color: #ffcece;
   font-weight: bold;
 }
 
 .logo {
-  height: 80px;
+  height: 35px;
 }
 
 footer {
