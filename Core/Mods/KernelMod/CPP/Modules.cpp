@@ -68,6 +68,30 @@ void ASCII(int arg) {
 		printf("ASCII module from file '/usr/share/KernelM/KernelMod/Modules.h' loaded sucessfully\n");
 
 	}
+	else if (arg == 3) 
+	{
+
+		printf("ASCII module from file '/usr/share/KernelM/KernelMod/Modules.h' closed sucessfully\n");
+
+	}
+	else if (arg == 4)
+	{
+
+		std::cout << "_______________________________" << std::endl;
+
+	}
+	else if (arg == 5)
+	{
+
+		std::cout << "|";
+
+	}
+	else if (arg == 20)
+	{
+
+		std::cout << "ASCII beta 2 :: for testing purposes only" << std::endl;
+
+	}
 	else 
 	{
 
@@ -126,7 +150,7 @@ int log(const std::string& arg)
 	else if (arg == "compilation")
 	{
 
-		std::cout << logPrefix << "compilation error, maybe Byt3z's error of the build, sorry\n";
+		std::cout << logPrefix << "compilation error, maybe Byt3z's error for this build, sorry\n";
 
 	}
 	else if (arg == "debug")

@@ -15,12 +15,61 @@ std::string CMD = "Unchanged";
 void start()
 {
 
-
+    ASCII(4);
 
 }
 
 void cmdCheck()
 {
+
+    if (CMD == "?" || CMD == "help")
+    {
+
+        std::cout << "Avaible commands:" << std::endl;
+        printf("? or help - Show this message\n"); // I thing if the people type "help" they already know this command
+        printf("std::clear - Clear the console\n"); // Just a C++ command, nothing special
+        printf("exit(0) - Exit the kernel\n");
+        printf("ASCII(<4-5>) - Print ASCII lines\n"); // Yes, now we have ASCII support >w<
+
+    }
+    else if (CMD == "std::clear")
+    {
+
+        system("cls"); // Thats very simple, just a convertion from C to C++ (i guess)
+
+    }
+    else if (CMD == "exit(0)")
+    {
+
+        exit(0); // You literally type a C code to exit, and the code verify it
+
+    }
+    else if (CMD == "Unchanged")
+    {
+
+        std::cout << "No command" << std::endl; // You are dumb if you did this by error ;-;
+
+    }
+    else if (CMD == "ASCII(4)")
+    {
+
+        ASCII(20); // A temporary watermark
+        ASCII(4);
+
+    }
+    else if (CMD == "ASCII(5)")
+    {
+
+        ASCII(5);
+
+    }
+    else
+    {
+
+        std::cout << "Unknown command: " << CMD << std::endl;
+
+    }
+
 }
 
 void update()
