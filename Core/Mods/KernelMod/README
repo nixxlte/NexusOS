@@ -1,0 +1,2 @@
+Hi! :3 Byt3z here, and this is the README for the KernelMod folder
+first, this part of the system is separated by 2 folders, the C# KernelMod, and the C++ KernelMod. The most current version of KernelMod is in C++, because Im migrating the code in C# to C++, and the next updates will be entirely focused on KernelMod in C++. And then, once i migrate all the code from C# to C++, the C# version will be completely removed from the system.
