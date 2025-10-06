@@ -31,17 +31,23 @@ void cmdCheck()
         printf("exit(0) - Exit the kernel\n");
         printf("ASCII(<4-5>) - Print ASCII lines\n"); // Yes, now we have ASCII support >w<
 
+		CMD = "Unchanged"; // Reset the command after use
+
     }
     else if (CMD == "std::clear")
     {
 
-        system("cls"); // Thats very simple, just a convertion from C to C++ (i guess)
+        system("cls"); // Thats very simple, just a convertion from C++ to C (i guess)
+
+        CMD = "Unchanged";
 
     }
     else if (CMD == "exit(0)")
     {
 
         exit(0); // You literally type a C code to exit, and the code verify it
+
+		CMD = "Unchanged";
 
     }
     else if (CMD == "Unchanged")
@@ -56,17 +62,23 @@ void cmdCheck()
         ASCII(20); // A temporary watermark
         ASCII(4);
 
+		CMD = "Unchanged";
+
     }
     else if (CMD == "ASCII(5)")
     {
 
         ASCII(5);
 
+		CMD = "Unchanged";
+
     }
     else
     {
 
         std::cout << "Unknown command: " << CMD << std::endl;
+
+		CMD = "Unchanged";
 
     }
 
