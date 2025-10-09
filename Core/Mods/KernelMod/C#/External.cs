@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 
 namespace KernelM
 {
+    // Code by Nixx UwU
+
     internal class External {
         public static void reset(string arg) {
             if (arg == "commands") {

@@ -18,7 +18,7 @@ Minimum:
 - 30GB of free disk space
 
 Recommended:
-- Dual-core CPU (2.4GHz or righer)
+- Dual-core CPU (2.2GHz or righer)
 - 4 or 6GB of RAM
 - 35GB of free disk space
 

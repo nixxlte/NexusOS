@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace KernelM {
-    internal class Modules {
+    // Code by Nixx UwU
 
+    internal class Modules {
         public static void init(string mod) {
             if (mod == "Display")  {
                 Console.Write("Loading Display module... \n");
@@ -20,7 +21,6 @@ namespace KernelM {
             } else {
                 Console.Write("Loading UNKNOWN module... \n");
             }
-
         }
 
         public static void close(string mod) {

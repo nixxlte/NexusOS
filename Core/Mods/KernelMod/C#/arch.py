@@ -5,7 +5,7 @@
 # Im making this module while play Animal Crossing Wild World
 # I'm addicted to this game
 
-# Code by Byt3z :3
+# Code by Nixx UwU
 
 import os
 import platform
@@ -24,14 +24,12 @@ def Garquiteture():
         print("error returning architecture")
 
 def MGRarch():
-
     AARCHTXT = tk.Label(text="Architecture: " + platform.architecture()[0]) # I love the fate that
     # Python is million times easier than C#, i made 51 lines in 5 minutes
     # In C# i would take 1 hour to do this
     AARCHTXT.pack(pady=5)
 
 def GUI():
-
     root = tk.Tk()
     root.title("NexusOS architecture manager")
     root.geometry("300x100")
@@ -48,7 +46,6 @@ def GUI():
     root.mainloop()
 
 def Main():
-
     Garquiteture()
     GUI()
     print("NexusCore Architecture Manager is not running...")

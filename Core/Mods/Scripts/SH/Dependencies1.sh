@@ -11,7 +11,7 @@
 # This "skin" became a full OS, that I compiled, and I made the utilities like PathX
 # I really put effort into making NexusOS and I hope you enjoy it, or destroy, you decide
 
-# Code by Byt3z :3 (rage and coffee helped too)
+# Code by Nixx UwU (rage and coffee helped too)
 
 echo resolving dependencies to PathX, Python, Electron and NexusCore
 
@@ -25,7 +25,7 @@ sudo apt install gnome-session gnome-shell gnome-tweaks python3 python3-tkinter 
 sudo apt install nala
 sudo apt install python3-gi gir1.2-gtk-3.0
 sudo apt install --fix-missing
-echo "alias apt='nala'" >> ~/.bashrc && source ~/.bashrc
+echo "alias apt='nala'" >> ~/.bashrc && source ~/.bashrc # NexusOS use Nala, that's a "APT++", so you still can use apt command, even if code redirect this to nala
 sudo apt install neofetch
 sudo apt remove snapd --purge -y
 sudo apt remove Ubuntu-desktop --purge -y
@@ -37,7 +37,7 @@ sudo su
 cd /
 mkdir .NexusCore
 cd .NexusCore
-git clone https://github.com/bitosxd/NexusOS.git
+git clone https://github.com/nixxlte/NexusOS.git
 mkdir /usr/share/Electron
 cd /usr/share/Electron
 git clone https://github.com/electron/electron
