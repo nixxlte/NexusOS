@@ -8,45 +8,22 @@ using System.Threading.Tasks;
 
 namespace KernelM
 {
-    internal class External
-    {
-
-        public static void reset(string arg)
-        {
-
-            if (arg == "commands")
-            {
-
+    internal class External {
+        public static void reset(string arg) {
+            if (arg == "commands") {
                 Program.cmd = "null";
                 Program.Update();
-
             }
-
         }
 
-        public static void logging(string arg)
-        {
-
-            if (arg != "REBOOTING")
-            {
-
+        public static void logging(string arg) {
+            if (arg != "REBOOTING") {
                 Console.Write("LOG: " + arg + "\n");
-
-            }
-            else if (arg == "REBOOTING")
-            {
-
-                Console.Write("REBOOTING by a system error");
-
-            }
-            else if (arg == "")
-            {
-
+            } else if (arg == "REBOOTING") {
+                Console.Write("REBOOTING: kernel panic");
+            } else if (arg == "") {
                 Console.Write("LOG: unknown");
-
             }
-
         }
-
     }
 }

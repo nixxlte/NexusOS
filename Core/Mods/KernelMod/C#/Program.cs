@@ -14,32 +14,24 @@ using System.Threading.Tasks;
 // d'you want a coffee to watch me code this?
 // I'm making this code while fix an Galaxy J5 :D
 
-// ^^ I already fixed the phone, but here is a registry that i need to fix a Galaxy J5 (of 2015)
+// ^^ I already fixed the phone, but here is a registry that i had to fix a Galaxy J5 (2015)
 
-namespace KernelM
-{
+namespace KernelM { 
+    // Code by Nixx UwU
 
-    // Code by Byt3z :3
-
-    internal class Program
-    {
-
+    internal class Program {
         public static string cmd = ""; // This is just a variable to store the command, I will use it later
         public static string process = ""; // This is just a variable to store the current process, I will use it later
         public static string ocmd = ""; // This is just a variable to store the old command, I will use it later
-        public static string blayve = ""; // Yes... almost 40 lines of code just to made a easter egg to a youtuber called Blayve
 
-        public static void Main(string[] args) // I cant count how many times I wrote "cublic" by error
-        {
-            Console.WriteLine("Finishing boot NexuOS...\n");
+        public static void Main(string[] args) { // I cant count how many times I wrote "cublic" by error while i tried to write "public"
+            Console.WriteLine("Finishing boot NexusOS...\n");
             System.Threading.Thread.Sleep(1000); // Wait for 1 second (1000 milliseconds), I did this cause
                                                  // Startup() clears the console, so you can't see the message
             Startup();
         }
-        
-        public static void Startup()
-        {
 
+        public static void Startup() {
             cmd = "null"; // Initialize the command variable to null, so it can be read later
             Console.Clear(); // Theres what I said, clears the console
             Console.WriteLine("Hello, World\n");
@@ -58,52 +50,37 @@ namespace KernelM
             Console.WriteLine("Call function KernelM.Boot() from file /mnt/KernelMod/KernelM.cs\n");
             Console.Clear();
             KernelM.TerminaRun(); // Call the "write a watermark in the terminal"
-            while (true) // Runs the KernelUpdate function at 60 ticks per second
-            {
-
+            while (true) { // Runs the KernelUpdate function at 60 ticks per second
                 KernelM.Kupdate(); // Call the KernelUpdate function, if I call the update function directly in the KernelM.cs
                 // The system wont start the Program.cs Update() void
                 Update();
                 System.Threading.Thread.Sleep(16); // Sleep for 16 milliseconds, this is 60 ticks per second
-
             }
-
         }
 
-        public static void Start()
-        {
-
+        public static void Start() {
             Console.WriteLine("KernelMod started successfully!\n");
             Console.Clear(); // Clears the console again, just... cause yes :D
-
         }
 
-        public static void Update()
-        {
-
+        public static void Update() {
             // Console.WriteLine("KernelMod is running..."); // This is just a SUCESSFULLY test,
             // the kernel mod is running properly
 
             // This will verify the command you will enter, and show a "> " prompt
             Modules.Display(4); // Print "> " and read the command from the console
-            ConsoleCommands(); // Call the verification of the entered command
-
+            Shell(); // Call the verification of the entered command
         }
 
-        public static void KernelProcess()
-        {
-
+        public static void KernelProcess() {
             // This is just a function to show the current kernel process, it can be executed by running "kprocess"
             Console.Write("\n");
             Console.Write("Current running process on kernel: \n");
             Console.WriteLine(process + "\n"); // Yes... just 2 lines of code, its not too much, but it works :D
             // And works well, so... its good, no? :3
-
         }
 
-        public static void Help()
-        {
-
+        public static void Help() {
             // Why i made this void? thats cause i use 2 FUCKIN' commands to activate the help function
             // And update both are very hard
 
@@ -116,98 +93,45 @@ namespace KernelM
             Console.Write("shutdown - Shut the system down, but it needs a argument, like -s\n");
             Console.WriteLine();
             External.reset("commands");
-
         }
 
-        public static void ConsoleCommands()
-        {
-
-            if (cmd == null)
-            {
-
+        public static void Shell() {
+            if (cmd == null) {
                 ocmd = cmd; // Save the old command to the ocmd variable
                 Console.Write("\n");
-                Console.Write("You entered an empty command, please enter a valid command.\n");
+                Console.Write("Null\n"); // You are dumb if u have done that by error
                 External.reset("commands"); // Reset the command to null, so it can be read again
-
-            }
-            else if (cmd == "help")
-            {
-
+            } else if (cmd == "help" || cmd == "?") {
                 ocmd = cmd;
 
                 Help(); // Call the Help function, this will show the available commands
-
-            }
-            else if (cmd == "?")
-            {
-
-                ocmd = cmd; // Save the old command to the ocmd variable
-
-                Help();
-
-            }
-            else if (cmd == "kprocess")
-            {
-
+            } else if (cmd == "kprocess") {
                 ocmd = cmd;
                 Console.Write("Booting KernelProcess...\n");
                 Console.Clear(); // Clears the console, cause we don't need to see the command prompt anymore
                 KernelProcess(); // Call the KernelProcess function, this will show the current kernel processes
                 External.reset("commands");
-
-            }
-            else if (cmd == "clr")
-            {
-
+            } else if (cmd == "clr") {
                 ocmd = cmd;
                 Console.Clear(); // Clears the console, this is just a command to clear the console...
                 External.reset("commands"); // Reset the command to null, so it can be read again
-
-            }
-            else if (cmd == "Console.Var.Read(cmd)")
-            {
-
+            } else if (cmd == "Console.Var.Read(cmd)") {
                 Console.Write(ocmd + " \n"); // Yes... this is the code to read the variable
                 ocmd = cmd;
                 External.reset("commands"); // This thing mades shell enter in a trance, and send infinite commands
                 // And im too lazy to fix it
-
-            }
-            else if (cmd == "exit")
-            {
-
+            } else if (cmd == "exit") {
                 ocmd = cmd;
                 Console.Write("If you exit the kernel mod, the kernel will stop and the system will shut down.\n");
-                Console.Write("so the command is 'shutdown -s', like in the windows\n");
+                Console.Write("so the command is 'shutdown -s'n");
                 External.reset("Commands");
-
-            }
-            else if (cmd == "shutdown -s")
-            {
-
+            } else if (cmd == "shutdown -s") {
                 ocmd = cmd;
                 Console.Write("Shutting down the system...\n");
                 System.Threading.Thread.Sleep(1000); // Wait for 1 second (1000 milliseconds)
                 Console.Clear(); // Clears the console, cause we don't need to see the command prompt anymore
                 Environment.Exit(0); // Exits the program, this will stop the kernel mod and shut down the system
-
-            }
-            else if (cmd == "Console.Var.Set(cmd) --blayve")
-            {
-
-                GetRandomBlayve(); // Call the GetRandomBlayve function, this will return a random blayve string
-                ocmd = cmd;
-                blayve = GetRandomBlayve(); // Set the blayve variable to the random blayve string
-                cmd = blayve; // Set the cmd variable to the random blayve string
-                Console.Write("You set the variable cmd to a random blayve: " + blayve + "\n");
-                Console.Clear();
-                Console.Write(blayve + "\n"); // Yes... its just an easter egg lol
-
-            }
-            else
-            {
-
+            } else {
                 ocmd = cmd;
                 Console.WriteLine(" ");
                 Console.Write("Unknown command: " + cmd + "\n");
@@ -216,19 +140,8 @@ namespace KernelM
                 Update(); // I need to place this here, cause... it has a cursed bug that show "unknown command" forever
                 // Its cool that i did this line while play animal crossing, right? :D
                 // (Nintendo please don't sue me, my game is original)
-
             }
 
         }
-
-        public static string GetRandomBlayve()
-        {
-            string[] options = { "I ate my dad", "I eat butterflies" };
-            Random rnd = new Random();
-            int index = rnd.Next(options.Length);
-            return options[index];
-        }
-
-    }
-
 }
+// Thats the end of the code :3 (for now >:9 )
