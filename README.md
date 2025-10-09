@@ -37,8 +37,7 @@ _This project is still in development. License will be defined later._
 
 Made by:
 
-[Gabii :3](https://github.com/Guii1161)
-[BitosXD](https://github.com/oByteszOficial)
+[NixxLTE UwU](https://github.com/nixxlte)
 [Giv-FNZ](https://github.com/GiovaniFZ)
 [Nassinger](https://github.com/im-nassinger)
 [TryPr0x](https://github.com/trypr0x)
