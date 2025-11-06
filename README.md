@@ -23,10 +23,9 @@ Recommended:
 - 35GB of free disk space
 
 ## 📦 Installation
-
-NexusOS is distributed via pre-built ISOs. You can flash the ISO to a USB drive using tools like **Balena Etcher**, **Rufus**, or **dd**, then boot from it and follow the on-screen instructions.
-
-> [Download ISO](http://nexusproject.vercel.app/download/)
+The project is now LuminOS, you can check it out here:
+> [Lumin](http://github.com/nixxlte/lumincore/)<br>
+This repo will be archived, when i finish the last README.md, to explain that changes.
 
 ## 📃 License
 
