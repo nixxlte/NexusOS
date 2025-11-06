@@ -21,7 +21,7 @@ Recommended:
 
 ## 📦 Installation
 The project is now LuminOS, you can check it out here:
-> [Lumin](http://github.com/nixxlte/lumincore/)<br>
+[Lumin](http://github.com/nixxlte/lumincore/)<br>
 This repo will be archived, when i finish the last README.md, to explain that changes.
 
 ## 📃 License
