@@ -1,7 +1,4 @@
-# NexusOS
-
-**NexusOS** is an intuitive Linux-based operating system designed for people who are just starting out in the Linux world. It's built to be simple, lightweight, and user-friendly.
-This OS is based on **Ubuntu**, but at the same time it has a similar idea to ChromeOS, which natively runs Progressive Web Apps (PWAs), and unlike ChromeOS, it remains a complete Linux distro with support for normal apps.
+**NexusOS** is ended, please read the LuminOS.txt on repo for more information.
 
 ## ✨ Features
 
