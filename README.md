@@ -1,4 +1,4 @@
-**NexusOS** is ended, please read the LuminOS.txt on repo for more information.
+### **NexusOS** is ended, please read the LuminOS.txt on repo for more information.
 
 ## ✨ Features
 
