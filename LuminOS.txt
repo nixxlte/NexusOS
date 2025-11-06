@@ -1,0 +1,30 @@
+Hi! this will be the last registry of NexusOS, at least on this repo.
+
+FIRST: I want to thank everyone who belived the project, It's thanks to you that the announcement inside this .txt file was possible
+a special thanks to @GiovaniFZ, @Lucmsilva651 and @im-Nassinger for helping me.
+
+SECOND: NexusOS is not the first name of the project, hope i was clear, and now it has a final name.
+this repo will be a archive of what I did in almost 1 year making this OS under the name of NexusOS
+
+THIRD: The project will not be ended, it just will change a bit.¹
+
+FINALLY: The final project name will be LuminOS, and the first open beta will be relased using KDE Plasma (instead of GNOME) as DE.
+The first open beta of LuminOS will be relased in December, 2025, stay tuned for more news!
+
+LuminOS will use C# for programs, instead of HTML in PWAs. Cause its more intuitive for me, and i think is better, and lighter than use Electron for any application instance.
+So, System requirements will be lighter than NexusOS, specifically, it will use the Kubuntu system requirements as base,
+cause Kubuntu is Ubuntu (Lumin's base) with Plasma (Lumin's DE). System requirements will be avaible on next news into my website
+and will be added to LuminCORE GitHub repo's README.md file... soon
+
+A speciall thanks for you all, and thanks for YOU to read this file.
+See you on December, 2025, with LuminOS Open Beta 1!
+
+- @NixxLTE UwU
+
+LuminOS repo: https://github.com/nixxlte/LuminCORE
+My website: https://nyannix.is-a.dev
+LuminOS telegram group: https://t.me/luminosdev
+My threads (where I share updates): https://www.threads.com/@nixxlte
+LuminOS Discord server: https://discord.gg/mhzfDZvCz5
+
+1. LuminOS will use a different programming language for apps, and "KernelMod" is now the LuminSDK. More information about LuminSDK is already avaible on Lumin repo.
